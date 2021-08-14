@@ -17,6 +17,8 @@
 			<th>Endereço</th>
 			<th>Sexo</th>
 			<th>Data de Nasc.</th>
+			<th>Editar</th>
+			<th>Excluir</th>
 		</tr>
 	</thead>
 
@@ -36,6 +38,8 @@
 			<td><?=$dados["enderecoContato"]?></td>
 			<td><?=$dados["sexoContato"]?></td>
 			<td><?=$dados["dataNascContato"]?></td>
+			<td><a href="index.php?menuop=editar-contato&idContato=<?=$dados["idContato"]?>"><i class="small material-icons center">edit</i></a></td>
+			<td><a href=""><i class="small material-icons center">delete</i></a></td>
 		</tr>
 	<?php } ?>
 	</tbody>
