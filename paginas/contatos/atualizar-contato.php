@@ -5,7 +5,7 @@
 
 <?php
 
-	$idContato = mysqli_real_escape_string($conexao,$_POST["idContato"]);
+	$id = mysqli_real_escape_string($conexao,$_POST["id"]);
 	$nomeContato = mysqli_real_escape_string($conexao,$_POST["nomeContato"]);
 	$emailContato = mysqli_real_escape_string($conexao,$_POST["emailContato"]);
 	$telefoneContato = mysqli_real_escape_string($conexao,$_POST["telefoneContato"]);
@@ -20,7 +20,7 @@
 	sexoContato = '{$sexoContato}', 
 	dataNascContato = '{$dataNascContato}'
 
-	WHERE idContato = {$idContato} 
+	WHERE id = {$id} 
 	";
 
 	mysqli_query($conexao, $sql) or die("Erro ao executar a consulta" . mysqli_error($conexao));
