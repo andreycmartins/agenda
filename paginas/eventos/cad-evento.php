@@ -9,7 +9,8 @@
 				$main = new Main();
 			?>
 
-  		<div class="">
+  		<div class="row">
+  			<label for="idCadastro">Nome do cliente: </label>
 			<div class="">
 				<select name="idCadastro" id="idCadastro" class="form-control" required>
 					<?php
@@ -18,35 +19,36 @@
 						}
 					?>
 				</select>
-				<label for="idCadastro">Nome do cliente: </label>
+				
 			</div>
 		</div>
 
 		<div class="row">
+				<label for="titulo">Título: </label>
 			<div class="input-field col s6">
 				<input type="text" name="titulo" id="titulo" required>
-				<label for="titulo">Título: </label>
 			</div>
 		</div>
 
 		<div class="row">
+				<label for="descricao">Descricao:</label>
 			<div class="input-field col s12">
 				<input type="text" name="descricao" id="descricao" required>
-				<label for="descricao">Descricao: </label>
 			</div>
 		</div>
 
+		
 		<div class="row">
+			<label for="start">Início: </label>
 			<div class="input-field col s12">
 				<input type="datetime-local" name="start" id="start" required>
-				<label for="start">Início: </label>
 			</div>
 		</div>
 
 		<div class="row">
+			<label for="end">Fim: </label>
 			<div class="input-field col s12">
 				<input type="datetime-local" name="end" id="end" required>
-				<label for="end">Fim: </label>
 			</div>
 		</div>
 

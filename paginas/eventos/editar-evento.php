@@ -14,6 +14,7 @@
 
   		<div class="">
 			<div class="">
+				<label for="idCadastro">Nome do cliente: </label>
 				<select name="idCadastro" id="idCadastro" class="form-control" required>
 					<?php
 						foreach ($main->getAll("contatos") as $contato) {
@@ -27,37 +28,41 @@
 						}
 					?>
 				</select>
-					<label for="idCadastro">Nome do cliente: </label>
+					
 			</div>
 		</div>
 		
 
 		<div class="row">
-			<div class="form-control col s6">
+			<div class=" col s6">
+				<label for="titulo">Título: </label>
 				<input value="<?= $evento[0]['titulo'] ?>" type="text" name="titulo" id="titulo" required>
 				<input value="<?= $evento[0]['id'] ?>" type="hidden" name="id" id="id" required>
-				<label for="titulo">Título: </label>
+				
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="form-control col s12">
-				<input value="<?= $evento[0]['descricao'] ?>" type="text" name="descricao" id="descricao" required>
+			<div class="col s12">
 				<label for="descricao">Descricao: </label>
+				<input value="<?= $evento[0]['descricao'] ?>" type="text" name="descricao" id="descricao" required>
+				
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="form-control col s12">
-				<input value="<?= date('Y-m-d\TH:i:s',strtotime($evento[0]['start'])) ?>" type="datetime-local" name="start" id="start" required>
+			<div class="col s12">
 				<label for="start">Início: </label>
+				<input value="<?= date('Y-m-d\TH:i:s',strtotime($evento[0]['start'])) ?>" type="datetime-local" name="start" id="start" required>
+				
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="form-control col s12">
-				<input value="<?= date('Y-m-d\TH:i:s',strtotime($evento[0]['end'])) ?>" type="datetime-local" name="end" id="end" required>
+			<div class="col s12">
 				<label for="end">Fim: </label>
+				<input value="<?= date('Y-m-d\TH:i:s',strtotime($evento[0]['end'])) ?>" type="datetime-local" name="end" id="end" required>
+				
 			</div>
 		</div>
 
